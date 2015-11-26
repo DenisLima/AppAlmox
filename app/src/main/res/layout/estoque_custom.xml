@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2012000072"
+        android:id="@+id/txtMaterialEstoque"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="52407663"
+        android:id="@+id/txtLoteEstoque"
+        android:textColor="#999999"
+        android:layout_alignBottom="@+id/txtMaterialEstoque"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Z06034"
+        android:id="@+id/txtLocalEstoque"
+        android:paddingRight="15dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="#999999"
+        android:layout_above="@+id/matCustom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Disponivel:"
+        android:id="@+id/matCustom"
+        android:layout_below="@+id/txtMaterialEstoque"
+        android:layout_alignLeft="@+id/txtMaterialEstoque"
+        android:layout_alignStart="@+id/txtMaterialEstoque"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Reservado:"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/matCustom"
+        android:layout_alignLeft="@+id/matCustom"
+        android:layout_alignStart="@+id/matCustom"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Bloqueado:"
+        android:id="@+id/txtBloq"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Processo:"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/txtBloq"
+        android:layout_alignLeft="@+id/txtBloq"
+        android:layout_alignStart="@+id/txtBloq"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txtDisponivelEstoque"
+        android:layout_toEndOf="@+id/txtBloq"
+        android:layout_above="@+id/textView11"
+        android:layout_toLeftOf="@+id/txtLoteEstoque"
+        android:layout_toStartOf="@+id/txtLoteEstoque"
+        android:textColor="#999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txtReservadoEstoque"
+        android:layout_above="@+id/txtBloq"
+        android:layout_alignLeft="@+id/txtDisponivelEstoque"
+        android:layout_alignStart="@+id/txtDisponivelEstoque"
+        android:textColor="#999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txtBloqueadoEstoque"
+        android:layout_above="@+id/textView12"
+        android:layout_alignLeft="@+id/txtReservadoEstoque"
+        android:layout_alignStart="@+id/txtReservadoEstoque"
+        android:textColor="#999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/txtProcessoEstoque"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignLeft="@+id/txtBloqueadoEstoque"
+        android:layout_alignStart="@+id/txtBloqueadoEstoque"
+        android:textColor="#999999" />
+
+</RelativeLayout>

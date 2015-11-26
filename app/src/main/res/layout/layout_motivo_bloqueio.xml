@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SELECIONE O MOTIVO DE BLOQUEIO"
+        android:id="@+id/listagemDestalheBloq"
+        android:background="#999999"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="529dp"
+        android:id="@+id/listaMotivoBloqueio" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAIR"
+        android:id="@+id/btnSairMotivo"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

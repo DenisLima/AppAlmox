@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Informe o código do material"
+        android:id="@+id/listagemDestalheBloq"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/codMaterialConsulta"
+        android:layout_below="@+id/listagemDestalheBloq"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/listagemDestalheBloq"
+        android:layout_alignEnd="@+id/listagemDestalheBloq"
+        android:layout_alignLeft="@+id/listagemDestalheBloq"
+        android:layout_alignStart="@+id/listagemDestalheBloq" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponível"
+        android:id="@+id/chDisp"
+        android:layout_below="@+id/codMaterialConsulta"
+        android:layout_alignLeft="@+id/codMaterialConsulta"
+        android:layout_alignStart="@+id/codMaterialConsulta"
+        android:layout_marginTop="46dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservada"
+        android:id="@+id/chReservada"
+        android:layout_below="@+id/chDisp"
+        android:layout_alignLeft="@+id/chDisp"
+        android:layout_alignStart="@+id/chDisp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Res. Pedido"
+        android:id="@+id/chResPedido"
+        android:layout_below="@+id/chReservada"
+        android:layout_alignLeft="@+id/chReservada"
+        android:layout_alignStart="@+id/chReservada" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inspeção"
+        android:id="@+id/chInspecao"
+        android:layout_below="@+id/chResPedido"
+        android:layout_alignLeft="@+id/chResPedido"
+        android:layout_alignStart="@+id/chResPedido" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Processo"
+        android:id="@+id/chProcesso"
+        android:layout_below="@+id/chInspecao"
+        android:layout_alignLeft="@+id/chInspecao"
+        android:layout_alignStart="@+id/chInspecao" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bloqueado"
+        android:id="@+id/chBloqueado"
+        android:layout_below="@+id/chProcesso"
+        android:layout_alignLeft="@+id/chProcesso"
+        android:layout_alignStart="@+id/chProcesso" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Em Terceiro"
+        android:id="@+id/chEmTerc"
+        android:layout_below="@+id/chBloqueado"
+        android:layout_alignLeft="@+id/chBloqueado"
+        android:layout_alignStart="@+id/chBloqueado" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:id="@+id/btnSairConMat"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/btnEnviarConMat"
+        android:layout_above="@+id/btnSairConMat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

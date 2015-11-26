@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".telaMenu">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONSULTA MATERIAL"
+        android:id="@+id/btnConsulta"
+        android:background="@layout/lista_botoes"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:height="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAIR"
+        android:background="@layout/lista_botoes"
+        android:id="@+id/btnSair"
+        android:layout_below="@+id/btnConsulta"
+        android:layout_marginTop="48dp"
+        android:layout_alignRight="@+id/btnConsulta"
+        android:layout_alignEnd="@+id/btnConsulta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:height="50dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLOQUEIA MATERIAL"
+        android:background="@layout/lista_botoes"
+        android:id="@+id/btnBloqueia"
+        android:layout_above="@+id/btnConsulta"
+        android:layout_marginBottom="44dp"
+        android:layout_alignRight="@+id/btnConsulta"
+        android:layout_alignEnd="@+id/btnConsulta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:height="50dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIBERA MATERIAL"
+        android:background="@layout/lista_botoes"
+        android:id="@+id/btnLibera"
+        android:layout_above="@+id/btnBloqueia"
+        android:layout_marginBottom="44dp"
+        android:layout_alignRight="@+id/btnBloqueia"
+        android:layout_alignEnd="@+id/btnBloqueia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:height="50dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
